@@ -1,0 +1,12 @@
+# Hvilken version eller hvilket python image skal vi bruge?
+
+FROM python:3.14-slim
+
+# Angiv arbejds directory
+WORKDIR  /App
+
+# kopiere alle filer fra root til rooten af imaget
+COPY . .
+
+# Kør scriptet, når Docker containeren starter
+CMD ["python","Helloworld.py"]
