@@ -3,7 +3,7 @@ name: Byg docker image
 on:
     push: 
         branches:
-            -main
+            - master
 
 jobs:
     build:
