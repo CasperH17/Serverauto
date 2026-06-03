@@ -9,4 +9,4 @@ WORKDIR  /App
 COPY . .
 
 # Kør scriptet, når Docker containeren starter
-CMD ["python","game.py"]
+CMD ["python","vejr.py"]

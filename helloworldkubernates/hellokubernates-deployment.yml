@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: game-quiz
+  name: vejr
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: game-quiz
+      app: vejr
   template:
     metadata:
       labels:
-        app: game-quiz
+        app: vejr
     spec:
       containers:
-        - name: game-quiz
-          image: ghcr.io/casperh17/quiz-game:latest
+        - name: vejr
+          image: ghcr.io/casperh17/vejr:latest
           imagePullPolicy: Always
