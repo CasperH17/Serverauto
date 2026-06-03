@@ -14,5 +14,5 @@ spec:
     spec:
       containers:
         - name: hello-python
-          image: ghcr.io/casperh17/hello-python:latest
+          image: ghcr.io/casperh17/quiz-game:latest
           imagePullPolicy: Always
