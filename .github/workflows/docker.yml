@@ -20,7 +20,7 @@ jobs:
               run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
 
             - name: Build Docker image 
-              run: docker build -t ghcr.io/${{ github.repository_owner }}/hello-python:latest ./helloworlddocker
+              run: docker build -t ghcr.io/${{ github.repository_owner }}/hello-python:latest ./helloworldkubernates
 
             - name: Run Docker image (detached mode)
               run: docker run -d ghcr.io/${{ github.repository_owner }}/hello-python:latest
