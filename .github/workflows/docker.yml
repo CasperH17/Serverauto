@@ -22,8 +22,8 @@ jobs:
             - name: Build Docker image 
               run: docker build -t ghcr.io/${{ github.repository_owner }}/hello-python:latest ./helloworlddocker
 
-            - name: Run Docker image 
-              run: docker run ghcr.io/${{ github.repository_owner }}/hello-python:latest
+            - name: Run Docker image (detached mode)
+              run: docker run -d ghcr.io/${{ github.repository_owner }}/hello-python:latest
             
             - name: Push Docker image 
               run: docker push ghcr.io/${{ github.repository_owner }}/hello-python:latest
