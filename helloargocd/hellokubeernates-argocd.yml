@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: hello-kubernetes
+  name: quiz-game
   namespace: argocd
 spec:
   project: default
