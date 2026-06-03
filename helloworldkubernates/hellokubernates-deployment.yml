@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-python
+  name: game-quiz
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hello-python
+      app: game-quiz
   template:
     metadata:
       labels:
-        app: hello-python
+        app: game-quiz
     spec:
       containers:
-        - name: hello-python
+        - name: game-quiz
           image: ghcr.io/casperh17/quiz-game:latest
           imagePullPolicy: Always
